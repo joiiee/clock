@@ -42,8 +42,9 @@
 }
 
 .hour-hand {
-    width: 35%;
-    transform-origin: 114% -50%;
+    /* width: 35%;
+    transform-origin: 114% -50%; */
+    background-image: linear-gradient(to right, #ad3636, black);
 }
 
 .digital-time {

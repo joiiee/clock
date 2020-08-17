@@ -2,7 +2,7 @@ const secondHand = document.querySelector('.seconds-hand');
 const minuteHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 const digital = document.querySelector('.digital-time');
-const hand = document.querySelector('.hand');
+const hands = document.querySelectorAll('.hand');
 
 function setDate() {
     const now = new Date();
@@ -32,7 +32,13 @@ function setDate() {
     // -------------------------------------------------------
 
     if (!seconds) {
-        hand.style.transition = '';
+        for (hand of hands) {
+            hand.style.transition = 'unset';
+        }
+    } else {
+        for (hand of hands) {
+            hand.style.transition = '';
+        }
     }
 }
 
