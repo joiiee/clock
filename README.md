@@ -1,4 +1,4 @@
-# clock #2
+# Analog clock (and Digital clock) #2
 
 30 Day Vanilla JS Challenge
 
